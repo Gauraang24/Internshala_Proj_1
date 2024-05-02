@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaurang More</title>
     <link rel="stylesheet" href="/assets/styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -24,21 +31,27 @@
     <main>
       <section id="home">
         <div class="profile_pic">
-          <img src="" alt="Profile Picture" />
+          <img
+            src="./assets/Images/profile-picc.png"
+            width="300"
+            alt="Profile Picture"
+          />
         </div>
         <div class="profile_info">
           <p>Hello, I'm</p>
           <h1>Gaurang More</h1>
-          <p>Frontend Developer</p>
+          <p id="profile_designation">Frontend Developer</p>
           <div>
-            <button>Download CV</button>
-            <button><a href="#contacts">Contact Info</a></button>
+            <button class="btn-filled">Download CV</button>
+            <button class="btn-outline">
+              <a href="#">Contact Info</a>
+            </button>
           </div>
           <div class="profile_links">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-solid fa-envelope"></i>
+            <a href=""><i class="fa-solid fa-envelope fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
           </div>
         </div>
       </section>
