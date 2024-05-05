@@ -16,14 +16,16 @@
   <body>
     <header>
       <div class="nav_logo">
-        <p>Gaurang</p>
+        <!-- <p>Gaurang</p> -->
+        <img src="./assets/Images/Gaurang.png" alt="Logo" />
       </div>
       <nav>
         <ul class="nav_ul">
           <li class="nav_li"><a href="#home">Home</a></li>
           <li class="nav_li"><a href="#about">About</a></li>
           <li class="nav_li"><a href="#skills">Skills</a></li>
-          <li class="nav_li"><a href="#services">Services</a></li>
+          <li class="nav_li"><a href="#certifications">Certificate</a></li>
+          <li class="nav_li"><a href="#projects">Projects</a></li>
           <li class="nav_li"><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
@@ -44,9 +46,7 @@
           <span id="profile_designation">Frontend Developer</span>
           <div>
             <button class="btn-filled">Download CV</button>
-            <button class="btn-outline">
-              <a href="#">Contact Info</a>
-            </button>
+            <a href="#"> <button class="btn-outline">Contact Info</button> </a>
           </div>
           <div class="profile_links">
             <a href=""><i class="fa-solid fa-envelope fa-xl"></i></a>
@@ -56,6 +56,7 @@
           </div>
         </div>
       </section>
+
       <!-- About section Below-->
       <section id="about">
         <div class="section-header">
@@ -107,10 +108,9 @@
                 such as Node.js and MongoDB to complement my front-end skills
                 and broaden my capabilities.
               </p>
-
-              <button class="btn-outline">
-                <a href="#">Read More</a>
-              </button>
+              <a href="#">
+                <button class="btn-outline">Read More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -125,83 +125,335 @@
 
         <div class="skills">
           <div class="skill">
-            <span class="skill-name">HTML/CSS/JS</span>
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-html-logo-50.png"
+                alt="html logo"
+              />
+              <span class="skill-name">HTML</span>
+            </div>
             <div class="progress-bar">
-              <div class="progress"></div>
+              <div class="progress prog-90"></div>
             </div>
           </div>
 
           <div class="skill">
-            <span class="skill-name">React</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-css-logo-50.png"
+                alt="CSS logo"
+              />
+              <span class="skill-name">CSS/Tailwind</span>
             </div>
-          </div>
-          <div class="skill">
-            <span class="skill-name">Next.js</span>
             <div class="progress-bar">
-              <div class="progress"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span class="skill-name">Git</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+              <div class="progress prog-90"></div>
             </div>
           </div>
 
           <div class="skill">
-            <span class="skill-name">MongoDB</span>
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-js-50.png"
+                alt="JS logo"
+              />
+              <span class="skill-name">JavaScript</span>
+            </div>
             <div class="progress-bar">
-              <div class="progress"></div>
+              <div class="progress prog-70"></div>
             </div>
           </div>
 
           <div class="skill">
-            <span class="skill-name">Node.js</span>
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-react-60.png"
+                alt="React logo"
+              />
+              <span class="skill-name">React</span>
+            </div>
             <div class="progress-bar">
-              <div class="progress"></div>
+              <div class="progress prog-70"></div>
             </div>
           </div>
+
           <div class="skill">
-            <span class="skill-name">Express</span>
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-nextjs-50.png"
+                alt="NextJs logo"
+              />
+              <span class="skill-name">Next.js</span>
+            </div>
             <div class="progress-bar">
-              <div class="progress"></div>
+              <div class="progress prog-70"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-git-50.png"
+                alt="Git logo"
+              />
+              <span class="skill-name">Git</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress prog-50"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-database-options-50.png"
+                alt="MongoDb logo"
+              />
+              <span class="skill-name">MongoDB</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress prog-40"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-backend-50.png"
+                alt="Node logo"
+              />
+              <span class="skill-name">Node.js</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress prog-30"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <img
+                src="/assets/Images/Skills_Logo/icons8-express-js-50.png"
+                alt="Express logo"
+              />
+              <span class="skill-name">Express</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress prog-30"></div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Services section Below-->
-      <section id="services">
-        <div class="section-header">
-          <span>I Offer This</span>
-          <h2>Services</h2>
-        </div>
-      </section>
-      <!-- Projects section Below-->
-      <section id="projects">
-        <div class="section-header">
-          <span>Browse My Recent</span>
-          <h2>Projects</h2>
-        </div>
-      </section>
+
       <!-- Certifications section Below-->
       <section id="certifications">
         <div class="section-header">
           <span>View My</span>
           <h2>Certifications</h2>
         </div>
+
+        <div class="certification-cards">
+          <div id="certificate-card-1" class="cert-card">
+            <img
+              src="/assets/Images/certficates/certificate1.jpg"
+              alt="certificate 1"
+            />
+            <div>
+              <span>Udemy</span>
+              <span>Web Development Bootcamp</span>
+            </div>
+            <button class="btn-outline">View</button>
+          </div>
+          <div id="certificate-card-2" class="cert-card">
+            <img
+              src="/assets/Images/certficates/certificate2.png"
+              alt="certificate 2"
+            />
+            <div>
+              <span>Lets Upgrade</span>
+              <span>React Js 3 Day Bootcamp</span>
+            </div>
+            <button class="btn-outline">View</button>
+          </div>
+          <div id="certificate-card-1" class="cert-card">
+            <img
+              src="/assets/Images/certficates/certificate1.jpg"
+              alt="certificate 1"
+            />
+            <div>
+              <span>Udemy</span>
+              <span>Web Development Bootcamp</span>
+            </div>
+            <button class="btn-outline">View</button>
+          </div>
+        </div>
       </section>
+
+      <!-- Projects section Below-->
+      <section id="projects">
+        <div class="section-header">
+          <span>Browse My Recent</span>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-cards">
+          <div id="project-card-1" class="proj-card">
+            <img
+              src="/assets/Images/Projects/Tic-tac-toe.png"
+              alt="Project 1"
+            />
+            <div>
+              <span>Project 1</span>
+              <span>Tic-tac-toe game</span>
+            </div>
+            <div class="proj-btn">
+              <button class="btn-outline">Live Preview</button>
+              <button class="btn-outline">Github</button>
+            </div>
+          </div>
+
+          <div id="project-card-2" class="proj-card">
+            <img src="/assets/Images/Projects/8-bits.png" alt="Project 2" />
+            <div>
+              <span>Project 2</span>
+              <span>8-Bit Website</span>
+            </div>
+            <div class="proj-btn">
+              <button class="btn-outline">Live Preview</button>
+              <button class="btn-outline">Github</button>
+            </div>
+          </div>
+
+          <div id="project-card-3" class="proj-card">
+            <img src="/assets/Images/Projects/Box-office.png" alt="Project 3" />
+            <div>
+              <span>Project 3</span>
+              <span>Box Office</span>
+            </div>
+            <div class="proj-btn">
+              <button class="btn-outline">Live Preview</button>
+              <button class="btn-outline">Github</button>
+            </div>
+          </div>
+
+          <div id="project-card-4" class="proj-card">
+            <img src="/assets/Images/Projects/Todo.png" alt="Project 4" />
+            <div>
+              <span>Project 4</span>
+              <span>Todo</span>
+            </div>
+            <div class="proj-btn">
+              <button class="btn-outline">Live Preview</button>
+              <button class="btn-outline">Github</button>
+            </div>
+          </div>
+
+          <div id="project-card-5" class="proj-card">
+            <img src="/assets/Images/Projects/Todo.png" alt="Project 5" />
+            <div>
+              <span>Project 5</span>
+              <span>Todo</span>
+            </div>
+            <div class="proj-btn">
+              <button class="btn-outline">Live Preview</button>
+              <button class="btn-outline">Github</button>
+            </div>
+          </div>
+
+          <div id="project-card-6" class="proj-card">
+            <img src="/assets/Images/Projects/Todo.png" alt="Project 6" />
+            <div>
+              <span>Project 6</span>
+              <span>Todo</span>
+            </div>
+            <div class="proj-btn">
+              <button class="btn-outline">Live Preview</button>
+              <button class="btn-outline">Github</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Skills section Below-->
       <section id="contacts">
         <div class="section-header">
           <span>Get In Touch</span>
           <h2>Contact Me</h2>
         </div>
+
+        <form action="">
+          <div class="contact-input-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button class="btn-filled" type="submit">Send Message</button>
+        </form>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- Footer section Below-->
+    <footer>
+      <div class="footer-content">
+        <img src="./assets/Images/Logo-footer.png" alt="Logo" />
+        <nav class="footer-links">
+          <div class="footer-quick-link">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skill</a></li>
+              <li><a href="#certifications">Certificate</a></li>
+              <li><a href="#projects">Project</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-wrap">
+            <div class="footer-contact-link">
+              <h6>Contact me</h6>
+              <ul>
+                <li>
+                  <img src="/assets/Images/education.png" alt="contact" />
+                  <a href="tel:9673462193"> 9673462193 </a>
+                </li>
+                <li>
+                  <img src="/assets/Images/education.png" />
+                  <a href="mailto:garryappdroid@gmail.com">
+                    garryappdroid@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-social-links">
+              <h6>Social Links</h6>
+              <div class="profile_links">
+                <a href=""><i class="fa-solid fa-envelope fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-github fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <p>&copy; 2024 Gaurang More. All Rights Reserved.</p>
+    </footer>
+
     <script
       src="https://kit.fontawesome.com/208225ee7a.js"
       crossorigin="anonymous"
