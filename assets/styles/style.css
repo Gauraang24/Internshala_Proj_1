@@ -31,6 +31,9 @@
     --fs-20: 20px;
     --fs-22: 22px;
     --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-28: 28px;
+    --fs-30: 30px;
 
     /* font family */
     --font-primary: 'Inter', 'Noto Sans JP', sans-serif;
@@ -110,6 +113,31 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+.section-header{
+    width: 100%;
+    text-align: center;
+}
+.section-header span{
+    display: block;
+}
+
+.section-header > span {
+    font-size: var(--fs-14);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: var(--text-black);
+}
+
+.section-header > h2 {
+    font-size: var(--fs-30);
+    font-family: var(--font-primary);
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
 
 
 /* body
@@ -119,8 +147,8 @@ a {
 body {
     font-family: var(--font-family-primary);
     width: var(--width-100) !important;
-    border: var(--border-test);
     margin-top: 40px;
+    overflow-x: hidden;
 }
 
 /* Header
@@ -160,12 +188,17 @@ main {
 ------------------------------ */
 
 section {
+    gap: 3rem;
+    min-height: 100vh;
+    border: var(--border-test);
+    padding: var(--s-20);
+    box-shadow: var(--shadow-secondary);
+}
+
+#home{
     align-items: center;
-    /* width: var(--width-100); */
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    height: 80vh;
 }
 
 .profile_info {
@@ -175,19 +208,20 @@ section {
     gap: var(--s-10);
 }
 
-.profile_info p {
+.profile_info span:nth-child(1) {
     font-weight: 500;
     font-size: var(--fs-16);
     font-family: var(--font-secondary);
 }
 
-.profile_info h1 {
+.profile_info span:nth-child(2) {
     font-size: 60px;
     font-family: var(--font-primary);
     background-image: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: 700;
 }
 
 #profile_designation {
@@ -216,3 +250,111 @@ section {
 .fa-linkedin-in:hover {
     color: #ff3b10;
 }
+
+/* about
+---------------------- */
+#about{
+    display: flex;
+    flex-direction: column
+}
+.about-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.about-info figure{
+    width: 50%;
+    flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.about-detail{
+    width: 50%;
+    padding: var(--s-20);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.about-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-cards article{
+    padding: var(--s-20);
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.about-cards article img{
+width: 30px;
+height: 30px;
+}
+
+.about-cards article h3{
+    padding-bottom: var(--s-10);
+    font-family: var(--font-primary);
+    columns: var(--text-black);
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.about-cards article p{
+    padding-bottom: var(--s-10);
+    font-family: var(--font-secondary);
+}
+
+.about-my-detail{
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    font-family: var(--font-primary);
+    margin-top: var(--s-20);
+    columns: var(--text-grey);
+}
+
+.about-my-detail button{
+    margin-top: var(--s-20);
+}
+
+
+
+/* skillss
+----------- */
+
+
+.skills {
+    margin-top: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50; /* Change the color to represent skill level */
+    border-radius: 5px;
+    width: 40%; /* Adjust width with JavaScript to represent skill level */
+  }
+  
