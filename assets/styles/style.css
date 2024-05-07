@@ -79,36 +79,51 @@ a {
 .prog-10 {
   width: var(--progress-10);
 }
+
 .prog-20 {
   width: var(--progress-20);
 }
+
 .prog-30 {
   width: var(--progress-30);
 }
+
 .prog-40 {
   width: var(--progress-40);
 }
+
 .prog-50 {
   width: var(--progress-50);
 }
+
 .prog-60 {
   width: var(--progress-60);
 }
+
 .prog-70 {
   width: var(--progress-70);
 }
+
 .prog-80 {
   width: var(--progress-80);
 }
+
 .prog-90 {
   width: var(--progress-90);
 }
+
 .prog-100 {
   width: var(--progress-40);
 }
 
 .bg-gradient {
   background: var(--gradient);
+}
+
+.static-button {
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
 }
 
 .btn-filled {
@@ -174,18 +189,19 @@ a {
   width: 100%;
   text-align: center;
 }
+
 .section-header span {
   display: block;
 }
 
-.section-header > span {
+.section-header>span {
   font-size: var(--fs-14);
   font-family: var(--font-secondary);
   font-weight: 500;
   color: var(--text-black);
 }
 
-.section-header > h2 {
+.section-header>h2 {
   font-size: var(--fs-30);
   font-family: var(--font-primary);
   background-image: var(--gradient);
@@ -217,10 +233,13 @@ header {
   background-color: #fff;
   z-index: 100;
 }
+
 nav {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
+
 .nav_logo {
   width: 100px;
   margin: var(--s-10);
@@ -237,6 +256,18 @@ nav {
 .nav_li {
   margin: var(--s-10);
   font-size: var(--fs-18);
+  font-family: var(--font-secondary);
+}
+
+.nav_li:hover {
+  border-bottom: 1px solid rgb(233, 123, 236);
+}
+
+
+@media only screen and (min-width: 801px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 /* main section */
@@ -252,7 +283,6 @@ main {
 section {
   gap: 3rem;
   min-height: 100vh;
-  /* border: var(--border-test); */
   padding: var(--s-20);
   box-shadow: var(--shadow-secondary);
 }
@@ -261,6 +291,29 @@ section {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.profile_pic img {
+  border-radius: 50%;
+  box-shadow: 0 0 60px 0 #f94cff;
+  width: 300px;
+  animation: moveUpDownShadow 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDownShadow {
+  0% {
+    transform: translateY(0);
+    /* Start position */
+    box-shadow: 0 0 80px 0 #f94cff;
+    /* Red shadow */
+  }
+
+  100% {
+    transform: translateY(-30px);
+    /* End position */
+    box-shadow: 0 10px 80px #ff3b10;
+    /* Pink shadow */
+  }
 }
 
 .profile_info {
@@ -313,12 +366,14 @@ section {
   color: #ff3b10;
 }
 
+
 /* about
 ---------------------- */
 #about {
   display: flex;
   flex-direction: column;
 }
+
 .about-info {
   width: 100%;
   display: flex;
@@ -333,6 +388,16 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+.about-img img {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.about-img img:hover {
+  transform: rotateY(180deg);
+}
+
 .about-detail {
   width: 50%;
   padding: var(--s-20);
@@ -340,6 +405,7 @@ section {
   flex-direction: column;
   height: auto;
 }
+
 .about-cards {
   display: flex;
   justify-content: space-evenly;
@@ -369,6 +435,7 @@ section {
   background-clip: text;
   color: transparent;
 }
+
 .about-cards article p {
   padding-bottom: var(--s-10);
   font-family: var(--font-secondary);
@@ -393,16 +460,17 @@ section {
   background-image: url("/assets/Images/Skill-bg-incline.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
+
 .skills {
   background: #fff;
   box-shadow: var(--shadow-tertiary);
-  margin-top: 20px;
   border: 1px solid rgb(53, 53, 53);
   border-radius: 30px;
   width: 80%;
   margin: auto;
-  margin-top: var(--s-20);
   padding: var(--s-20);
   display: flex;
   flex-wrap: wrap;
@@ -414,6 +482,7 @@ section {
   align-items: center;
   gap: 20px;
 }
+
 .skill-top span {
   padding: var(--s-10) 0px;
   font-size: var(--fs-26);
@@ -446,7 +515,6 @@ section {
   height: 100%;
   background: var(--gradient);
   border-radius: 15px;
-  /* width: 40%; */
 }
 
 /* certificate section
@@ -458,7 +526,6 @@ section {
 }
 
 .certification-cards {
-  /* border: 1px solid red; */
   padding: var(--s-20);
   display: flex;
   height: auto;
@@ -473,6 +540,7 @@ section {
   border-radius: 5px;
   box-shadow: var(--shadow-primary);
   margin: auto;
+  border: 1px solid rgb(0 0 0 / 15%);
 }
 
 .cert-card:hover {
@@ -511,7 +579,6 @@ section {
 }
 
 .project-cards {
-  /* border: 1px solid red; */
   padding: var(--s-20);
   display: flex;
   flex-wrap: wrap;
@@ -525,14 +592,13 @@ section {
   padding: var(--s-10);
   transition: border 0.5s ease, box-shadow 0.3s ease;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-  /* border: 1px solid rgba(128, 128, 128, 0.5); */
   border-radius: 5px;
   box-shadow: var(--shadow-primary);
+  border: 1px solid rgb(0 0 0 / 15%);
 }
 
 .proj-card:hover {
   border: 1px solid rgba(128, 128, 128, 0.2);
-  /* background-color: #f94cff40; */
   background: #f94cff22;
   box-shadow: var(--shadow-secondary);
   transform: scale(1.1);
@@ -549,7 +615,6 @@ section {
 
 .proj-card div span:nth-child(1) {
   font-size: var(--fs-12);
-
   font-family: var(--font-secondary);
   color: var(--text-grey);
   display: block;
@@ -564,18 +629,18 @@ section {
 }
 
 .proj-btn {
-  /* border: 1px solid red; */
   display: flex;
+  width: 100%;
+  flex-direction: column;
   justify-content: space-between;
-  padding: var(--s-10) 0;
+  padding: var(--s-10);
 }
 
 .proj-btn button {
-  width: 150px !important;
-  /* font-size: var(--fs-16); */
-  /* height: 40px; */
+  width: 100%;
+  text-align: center;
   font-family: var(--font-secondary);
-  margin: 0 10px;
+  margin: 10px auto;
 }
 
 /* contacts
@@ -612,11 +677,13 @@ section {
   padding: var(--s-20);
   border-radius: 20px;
 }
+
 #contacts form div {
   display: flex;
   width: 100%;
   gap: 10px;
 }
+
 #contacts form div input {
   width: 50%;
   padding: 10px;
@@ -634,6 +701,7 @@ section {
   border: 1px solid #ccc;
   font-family: var(--font-primary);
 }
+
 form button {
   width: 100% !important;
 }
@@ -645,6 +713,7 @@ footer {
   height: auto;
   background: rgb(250 199 254);
 }
+
 .footer-content {
   display: flex;
 }
@@ -695,6 +764,7 @@ footer p {
   justify-content: space-between;
   align-items: center;
 }
+
 .footer-contact-link ul li img {
   width: 20px;
   height: 20px;
@@ -762,4 +832,150 @@ footer p {
   border-bottom: 1px solid black;
   padding-bottom: 5px;
   margin-bottom: var(--s-15);
+}
+
+
+/* Media Queries for max-width 1200px */
+
+@media only screen and (max-width: 1200px) {
+
+  /* home-section */
+  .profile_info span:nth-child(2) {
+    text-align: center;
+  }
+
+
+  /* about-section */
+  .about-img img {
+    width: 350px;
+  }
+
+  .about-info {
+    flex-direction: column;
+  }
+
+  .about-detail {
+    width: 90%;
+  }
+
+  .about-card {
+    flex: 1;
+    margin: 0 20px;
+  }
+
+  .about-my-detail {
+    width: 100%;
+    line-height: 2;
+    margin-top: 25px;
+  }
+
+  .about-my-detail button {
+    margin: 25px auto;
+    width: 100%;
+  }
+
+  .cert-card img {
+    height: 160px;
+  }
+}
+
+/* media queries for max-width 800px */
+@media only screen and (max-width: 800px) {
+  .nav_ul {
+    display: none;
+  }
+
+  #toggle-day-night {
+    display: none;
+  }
+
+  .mobile-menu {
+    margin: 0 20px;
+  }
+
+  /* home-section */
+  #home {
+    flex-direction: column;
+  }
+
+  /* skill-section   */
+  .skill-top span {
+    font-size: var(--fs-20);
+  }
+
+  /* certification section */
+
+  .certification-cards {
+    flex-direction: column;
+    /* border: 1px solid red */
+  }
+
+  .cert-card {
+    width: 500px;
+    margin: 20px auto;
+  }
+
+  .cert-card img {
+    height: 275px;
+  }
+
+  /* project section */
+  .proj-card {
+    width: 48%;
+  }
+
+  .proj-card:hover {
+    transform: scale(1);
+  }
+
+  .proj-card div span:nth-child(2) {
+    font-size: 20px;
+  }
+
+  /* contact section */
+
+  #contacts form {
+    width: 90%;
+  }
+
+
+
+
+
+
+
+
+  /* footer section */
+
+  .footer-links {
+    flex-direction: column;
+    flex: 0;
+    margin: 15px;
+  }
+
+  .footer-quick-link ul li a {
+    width: auto;
+    margin: 0 5px;
+    font-size: var(--fs-12);
+    height: 20px;
+
+  }
+
+  .footer-quick-link ul {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  .footer-contact-link ul {
+    display: flex;
+  }
+
+  .footer-contact-link ul li {
+    padding-right: 20px;
+  }
+
+  .footer-contact-link ul li a {
+    font-size: 12px;
+    width: auto;
+  }
 }

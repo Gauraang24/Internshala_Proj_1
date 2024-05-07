@@ -28,17 +28,26 @@
           <li class="nav_li"><a href="#projects">Projects</a></li>
           <li class="nav_li"><a href="#contacts">Contacts</a></li>
         </ul>
+
+        <div id="toggle-day-night">
+          <button class="static-button">
+            <i class="fa-solid fa-moon fa-2xl" style="color: #ffd43b"></i>
+          </button>
+          <button class="static-button">
+            <i class="fa fa-sun-o fa-2xl" style="color: #ffd43b"></i>
+          </button>
+        </div>
+
+        <div class="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
     </header>
     <main>
       <!-- Home section Below -->
       <section id="home">
         <div class="profile_pic">
-          <img
-            src="./assets/Images/profile-pic.png"
-            width="300"
-            alt="Profile Picture"
-          />
+          <img src="./assets/Images/profile-pic.png" alt="Profile Picture" />
         </div>
         <div class="profile_info">
           <span>Hello, I'm</span>
@@ -46,7 +55,9 @@
           <span id="profile_designation">Frontend Developer</span>
           <div>
             <button class="btn-filled">Download CV</button>
-            <a href="#"> <button class="btn-outline">Contact Info</button> </a>
+            <a href="#contacts">
+              <button class="btn-outline">Contact Info</button>
+            </a>
           </div>
           <div class="profile_links">
             <a href=""><i class="fa-solid fa-envelope fa-xl"></i></a>
@@ -108,7 +119,7 @@
                 such as Node.js and MongoDB to complement my front-end skills
                 and broaden my capabilities.
               </p>
-              <a href="#">
+              <a href="">
                 <button class="btn-outline">Read More</button>
               </a>
             </div>
@@ -302,11 +313,15 @@
             />
             <div>
               <span>Project 1</span>
-              <span>Tic-tac-toe game</span>
+              <span>Tic Tac Toe Game</span>
             </div>
             <div class="proj-btn">
-              <button class="btn-outline">Live Preview</button>
-              <button class="btn-outline">Github</button>
+              <a href="https://tictictic.surge.sh/" target="_blank">
+                <button class="btn-filled">Live</button>
+              </a>
+              <a href="https://github.com/Gauraang24/Tictactoe" target="_blank">
+                <button class="btn-outline">Github</button>
+              </a>
             </div>
           </div>
 
@@ -314,11 +329,18 @@
             <img src="/assets/Images/Projects/8-bits.png" alt="Project 2" />
             <div>
               <span>Project 2</span>
-              <span>8-Bit Website</span>
+              <span>8Bits Website</span>
             </div>
             <div class="proj-btn">
-              <button class="btn-outline">Live Preview</button>
-              <button class="btn-outline">Github</button>
+              <a href="https://8bitcreation.com/" target="_blank">
+                <button class="btn-filled">Live</button>
+              </a>
+              <a
+                href="https://github.com/Gauraang24/8Bit-creation"
+                target="_blank"
+              >
+                <button class="btn-outline">Github</button>
+              </a>
             </div>
           </div>
 
@@ -329,44 +351,82 @@
               <span>Box Office</span>
             </div>
             <div class="proj-btn">
-              <button class="btn-outline">Live Preview</button>
-              <button class="btn-outline">Github</button>
+              <a
+                href="https://gauraang24.github.io/Box-Office/#/"
+                target="_blank"
+              >
+                <button class="btn-filled">Live</button>
+              </a>
+              <a
+                href="https://github.com/Gauraang24/Box-Office"
+                target="_blank"
+              >
+                <button class="btn-outline">Github</button>
+              </a>
             </div>
           </div>
 
           <div id="project-card-4" class="proj-card">
-            <img src="/assets/Images/Projects/Todo.png" alt="Project 4" />
+            <img
+              src="/assets/Images/Projects/ecompusell-website.png"
+              alt="Project 4"
+            />
             <div>
               <span>Project 4</span>
-              <span>Todo</span>
+              <span>Ecompusell Website</span>
             </div>
             <div class="proj-btn">
-              <button class="btn-outline">Live Preview</button>
-              <button class="btn-outline">Github</button>
+              <a
+                href="https://gauraang24.github.io/ecomp/index.html"
+                target="_blank"
+              >
+                <button class="btn-filled">Live</button>
+              </a>
+              <a href="https://github.com/Gauraang24/ecomp" target="_blank">
+                <button class="btn-outline">Github</button>
+              </a>
             </div>
           </div>
 
           <div id="project-card-5" class="proj-card">
-            <img src="/assets/Images/Projects/Todo.png" alt="Project 5" />
+            <img src="/assets/Images/Projects/Nike-clone.png" alt="Project 5" />
             <div>
               <span>Project 5</span>
-              <span>Todo</span>
+              <span>Nike Clone</span>
             </div>
             <div class="proj-btn">
-              <button class="btn-outline">Live Preview</button>
-              <button class="btn-outline">Github</button>
+              <a
+                href="https://github.com/Gauraang24/Nike_ecom_website"
+                target="_blank"
+              >
+                <button class="btn-outline">Github</button>
+              </a>
             </div>
           </div>
 
           <div id="project-card-6" class="proj-card">
-            <img src="/assets/Images/Projects/Todo.png" alt="Project 6" />
+            <img
+              src="/assets/Images/Projects/Youtube-clone.png"
+              alt="Project 6"
+            />
             <div>
               <span>Project 6</span>
-              <span>Todo</span>
+              <span>Youtube-clone</span>
             </div>
             <div class="proj-btn">
-              <button class="btn-outline">Live Preview</button>
-              <button class="btn-outline">Github</button>
+              <a
+                href="https://gauraang24.github.io/youtubeClone/"
+                target="_blank"
+              >
+                <button class="btn-filled">Live</button>
+              </a>
+
+              <a
+                href="https://github.com/Gauraang24/youtubeClone"
+                target="_blank"
+              >
+                <button class="btn-outline">Github</button>
+              </a>
             </div>
           </div>
         </div>
