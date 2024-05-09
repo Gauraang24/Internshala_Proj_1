@@ -309,7 +309,7 @@ section {
   }
 
   100% {
-    transform: translateY(-30px);
+    transform: translateY(-25px);
     /* End position */
     box-shadow: 0 10px 80px #ff3b10;
     /* Pink shadow */
@@ -938,13 +938,6 @@ footer p {
     width: 90%;
   }
 
-
-
-
-
-
-
-
   /* footer section */
 
   .footer-links {
@@ -977,5 +970,121 @@ footer p {
   .footer-contact-link ul li a {
     font-size: 12px;
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  section {
+    padding: var(--s-10);
+  }
+
+  /* home-section */
+  .profile_pic img {
+    width: 250px;
+  }
+
+  .profile_info span:nth-child(2) {
+    font-size: 50px;
+  }
+
+  #profile_designation {
+    font-size: 20px !important;
+  }
+
+  .btn-filled {
+    font-size: var(--fs-12);
+    padding: 9px 15px;
+  }
+
+  .btn-outline {
+    padding: 9px 15px;
+    font-size: var(--fs-12);
+  }
+
+  /* about section */
+  .about-cards article {
+    padding: 10px;
+  }
+
+  .about-cards article p {
+    font-size: 12px;
+  }
+
+  .about-card {
+    margin: 0 10px;
+  }
+
+  .about-cards article h3 {
+    font-size: 15px;
+  }
+
+  .about-my-detail p {
+    font-size: 12px;
+  }
+
+  /* skills section */
+
+  .skill {
+    width: 100%;
+  }
+
+  .skills {
+    width: 95%;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+
+  .cert-card {
+    margin: 10px auto;
+  }
+
+  .project-cards {
+    padding: 0px;
+  }
+
+  .proj-card {
+    width: 100%;
+  }
+
+  .proj-card {
+    margin: 10px auto;
+  }
+
+  /* contact section */
+  #contacts form div {
+    flex-direction: column;
+  }
+
+  #contacts form div input {
+    width: 100%;
+  }
+
+  /* certificate section  */
+
+  .certification-cards {
+    padding: var(--s-10);
+  }
+
+  .cert-card {
+    width: 360px;
+  }
+
+  /*footer section*/
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  footer div img {
+    width: auto;
+  }
+
+  footer div img {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
   }
 }
