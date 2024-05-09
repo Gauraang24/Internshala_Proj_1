@@ -659,9 +659,23 @@ section {
   padding: 10px;
   border-radius: 15px;
   margin: 0 auto;
+  backdrop-filter: blur(10px);
+}
+
+#skills .section-header {
+  background: rgba(0, 0, 0, 0.5);
+  width: max-content;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
 }
 
 #contacts .section-header span {
+  color: #fff;
+}
+
+#skills .section-header span {
   color: #fff;
 }
 
@@ -1086,5 +1100,61 @@ footer p {
     width: 300px;
     height: 300px;
     margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about-detail {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .about-card {
+    margin: 0 5px;
+  }
+
+  .about-my-detail {
+    padding: 0px 10px;
+  }
+
+  /* certification section */
+  .cert-card {
+    width: 330px;
+  }
+
+  .cert-card img {
+    height: 170px;
+  }
+
+  .certification-cards {
+    padding: 0px;
+  }
+
+  .cert-card:hover {
+    transform: scale(1);
+  }
+
+  /* skill section */
+  .skill {
+    margin-bottom: 0px;
+  }
+
+  .skill-top span {
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    height: 10px;
+  }
+
+  /* contacts section */
+
+  #contacts form {
+    width: 100%;
+  }
+
+  /* footer section  */
+  .footer-quick-link ul li a {
+    margin: 0 0 0 6px;
   }
 }
